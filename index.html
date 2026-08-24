@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Хомидов Александр Владимирович — Военторг 77</title>
+  <meta name="description" content="Военторг 77. Хомидов Александр Владимирович — военная экипировка. Москва, ул. Лечебная, 17." />
+  <meta name="keywords" content="военторг, военная экипировка, Военторг 77, Хомидов, Москва, Лечебная 17" />
+  <meta name="author" content="Хомидов Александр Владимирович" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0b1018" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <meta name="geo.region" content="RU-MOW" />
+  <meta name="geo.placename" content="Москва" />
+  <meta name="geo.position" content="55.79118;37.74112" />
+  <meta name="ICBM" content="55.79118, 37.74112" />
+
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Хомидов Александр Владимирович — Военторг 77" />
+  <meta property="og:description" content="Военная экипировка. Москва, ул. Лечебная, 17." />
+  <meta property="og:image" content="assets/logo-group9.png" />
+  <meta property="og:image:alt" content="Логотип Военторг 77" />
+  <meta property="og:site_name" content="Военторг 77" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Хомидов Александр Владимирович — Военторг 77" />
+  <meta name="twitter:description" content="Военная экипировка. Москва, ул. Лечебная, 17." />
+  <meta name="twitter:image" content="assets/logo-group9.png" />
+
+  <link rel="icon" href="assets/logo-group9.png" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/logo-group9.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Russo+One&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --olive: #b7c86a;
+      --olive-deep: #6e7d32;
+      --olive-glow: rgba(183, 200, 106, 0.45);
+      --red: #d32f2f;
+      --sky: #7ec8e3;
+      --ink: #0b1018;
+      --glass: rgba(8, 12, 20, 0.72);
+      --line: rgba(183, 200, 106, 0.35);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      min-height: 100%;
+    }
+
+    body {
+      font-family: "Oswald", "Arial Narrow", sans-serif;
+      color: #e8eed6;
+      background: var(--ink);
+      overflow-x: hidden;
+    }
+
+    .bg {
+      position: fixed;
+      inset: -40px;
+      background: url("assets/camo-bg.png") center / cover no-repeat;
+      filter: blur(10px) saturate(0.85) brightness(0.42);
+      transform: scale(1.08);
+      z-index: 0;
+    }
+
+    .vignette {
+      position: fixed;
+      inset: 0;
+      z-index: 1;
+      background:
+        radial-gradient(ellipse at center, transparent 30%, rgba(0, 0, 0, 0.72) 100%),
+        linear-gradient(180deg, rgba(5, 10, 16, 0.35), rgba(5, 10, 16, 0.55));
+      pointer-events: none;
+    }
+
+    .page {
+      position: relative;
+      z-index: 2;
+      min-height: 100dvh;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 28px 16px 36px;
+    }
+
+    .card {
+      width: min(640px, 100%);
+      background: var(--glass);
+      border: 1px solid var(--line);
+      backdrop-filter: blur(18px) saturate(1.1);
+      -webkit-backdrop-filter: blur(18px) saturate(1.1);
+      padding: 36px 32px 28px;
+      position: relative;
+      box-shadow:
+        0 24px 60px rgba(0, 0, 0, 0.45),
+        inset 0 1px 0 rgba(255, 255, 255, 0.06);
+    }
+
+    .corner {
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      border-color: var(--olive);
+      border-style: solid;
+      pointer-events: none;
+    }
+
+    .corner-tl { top: 8px; left: 8px; border-width: 2px 0 0 2px; }
+    .corner-tr { top: 8px; right: 8px; border-width: 2px 2px 0 0; }
+    .corner-bl { bottom: 8px; left: 8px; border-width: 0 0 2px 2px; }
+    .corner-br { bottom: 8px; right: 8px; border-width: 0 2px 2px 0; }
+
+    .logo-wrap {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 18px;
+    }
+
+    .logo {
+      width: min(220px, 62vw);
+      height: auto;
+      display: block;
+      mix-blend-mode: screen;
+      filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.45));
+    }
+
+    .rank-line {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 4px 0 18px;
+      color: var(--olive);
+      letter-spacing: 0.28em;
+      font-size: 11px;
+      text-transform: uppercase;
+    }
+
+    .rank-line::before,
+    .rank-line::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--olive), transparent);
+      opacity: 0.55;
+    }
+
+    h1 {
+      font-family: "Russo One", "Oswald", sans-serif;
+      color: var(--olive);
+      text-align: center;
+      font-size: clamp(26px, 6.4vw, 42px);
+      line-height: 1.15;
+      letter-spacing: 0.04em;
+      text-shadow: 0 0 22px var(--olive-glow);
+      text-transform: uppercase;
+    }
+
+    .patronymic {
+      display: block;
+      margin-top: 6px;
+      font-size: clamp(16px, 3.8vw, 22px);
+      letter-spacing: 0.08em;
+      color: #d5e08a;
+      font-weight: 400;
+    }
+
+    .assortment {
+      margin: 26px auto 8px;
+      max-width: 460px;
+      text-align: center;
+    }
+
+    .typed {
+      min-height: 1.5em;
+      font-family: "Russo One", sans-serif;
+      font-size: clamp(15px, 3.4vw, 18px);
+      color: var(--olive);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .typed::after {
+      content: "_";
+      margin-left: 2px;
+      color: var(--olive);
+      animation: blink 0.85s step-end infinite;
+    }
+
+    .map-block {
+      margin-top: 28px;
+    }
+
+    .map-head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+
+    .map-title {
+      font-family: "Russo One", sans-serif;
+      font-size: 13px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--olive);
+    }
+
+    .address {
+      font-size: 15px;
+      letter-spacing: 0.04em;
+      color: #dfe6c8;
+    }
+
+    .map-frame {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      height: 230px;
+      background: #10161f;
+    }
+
+    .map-frame iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      filter: saturate(0.85) contrast(1.05);
+    }
+
+    .route {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 12px;
+      padding: 10px 14px;
+      border: 1px solid var(--olive-deep);
+      color: var(--olive);
+      text-decoration: none;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-size: 12px;
+      transition: 0.2s ease;
+      background: rgba(110, 125, 50, 0.12);
+    }
+
+    .route:hover,
+    .route:focus-visible {
+      background: rgba(183, 200, 106, 0.18);
+      box-shadow: 0 0 18px var(--olive-glow);
+    }
+
+    .footer {
+      margin-top: 18px;
+      text-align: center;
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(232, 238, 214, 0.45);
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+
+    @media (max-width: 520px) {
+      .card {
+        padding: 28px 18px 22px;
+      }
+
+      .map-frame {
+        height: 200px;
+      }
+
+      .route {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <main class="page">
+    <section class="card">
+      <span class="corner corner-tl"></span>
+      <span class="corner corner-tr"></span>
+      <span class="corner corner-bl"></span>
+      <span class="corner corner-br"></span>
+
+      <div class="logo-wrap">
+        <img class="logo" src="assets/logo-group9.png" alt="Логотип Военторг 77" />
+      </div>
+
+      <p class="rank-line">Военторг 77</p>
+
+      <h1>
+        Хомидов
+        <span class="patronymic">Александр Владимирович</span>
+      </h1>
+
+      <div class="assortment">
+        <p class="typed" id="typed" aria-live="polite"></p>
+      </div>
+
+      <div class="map-block">
+        <div class="map-head">
+          <div>
+            <p class="map-title">Точка на карте</p>
+            <p class="address">ул. Лечебная, 17, г. Москва</p>
+          </div>
+        </div>
+        <div class="map-frame">
+          <iframe
+            title="Карта: улица Лечебная, 17, Москва"
+            src="https://yandex.ru/map-widget/v1/?ll=37.74112%2C55.79118&z=16&pt=37.74112,55.79118,pm2rdm&l=map"
+            loading="lazy"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <a
+          class="route"
+          href="https://yandex.ru/maps/?text=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%9B%D0%B5%D1%87%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F%2C%2017"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Открыть маршрут →
+        </a>
+      </div>
+
+      <p class="footer">Москва · Соколиная Гора</p>
+    </section>
+  </main>
+
+  <script>
+    const text = "Военная экипировка";
+    const el = document.getElementById("typed");
+    let i = 0;
+    let deleting = false;
+
+    function tick() {
+      el.textContent = text.slice(0, i);
+
+      if (!deleting && i < text.length) {
+        i += 1;
+        setTimeout(tick, 70);
+        return;
+      }
+
+      if (!deleting && i === text.length) {
+        deleting = true;
+        setTimeout(tick, 2200);
+        return;
+      }
+
+      if (deleting && i > 0) {
+        i -= 1;
+        setTimeout(tick, 28);
+        return;
+      }
+
+      deleting = false;
+      setTimeout(tick, 450);
+    }
+
+    tick();
+  </script>
+</body>
+</html>

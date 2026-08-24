@@ -323,6 +323,11 @@
         padding: 28px 18px 22px;
       }
 
+      h1 {
+        text-shadow: none;
+        -webkit-text-stroke: 0;
+      }
+
       .map-frame {
         height: 200px;
       }
@@ -330,6 +335,13 @@
       .route {
         width: 100%;
         justify-content: center;
+      }
+    }
+
+    @media (hover: none) and (pointer: coarse) {
+      h1 {
+        text-shadow: none;
+        -webkit-text-stroke: 0;
       }
     }
   </style>

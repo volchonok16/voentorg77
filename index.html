@@ -211,8 +211,20 @@
     }
 
     .phone:hover,
-    .phone:focus-visible {
+    .phone:focus-visible,
+    .email:hover,
+    .email:focus-visible {
       color: #d5e08a;
+    }
+
+    .email {
+      display: block;
+      margin-top: 8px;
+      font-family: "Oswald", sans-serif;
+      font-size: clamp(15px, 3.2vw, 18px);
+      letter-spacing: 0.06em;
+      color: var(--olive);
+      text-decoration: none;
     }
 
     .map-block {
@@ -333,6 +345,7 @@
           <span class="patronymic">Александр Владимирович</span>
         </p>
         <a class="phone" href="tel:+79100027400">+7 910 002-74-00</a>
+        <a class="email" href="mailto:voentorg77@yandex.ru">voentorg77@yandex.ru</a>
       </div>
 
       <div class="map-block">
